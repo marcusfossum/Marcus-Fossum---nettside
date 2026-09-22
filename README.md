@@ -1,5 +1,7 @@
 # Marcus Fossum – personlig nettside
 
+https://marcusfossum.github.io/Marcus-Fossum---nettside/
+
 Personlig portfolio og digital CV med utdanning, erfaring, verv og prosjekter.
 
 Når GitHub Pages er aktivert med «GitHub Actions» som kilde, publiseres siden automatisk etter hver oppdatering til `main`.

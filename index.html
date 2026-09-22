@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Digital CV for Marcus Fossum — student i Ingeniørvitenskap og IKT ved NTNU." />
+    <meta name="theme-color" content="#f4f5f7" />
+    <title>Marcus Fossum — digital CV</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2312161f'/%3E%3Cpath d='M15 44V20h7l10 14 10-14h7v24h-8V32L32 44 23 32v12z' fill='%23ffffff'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Hopp til innhold</a>
+
+    <header class="site-header">
+      <a class="identity" href="#top" aria-label="Marcus Fossum, tilbake til toppen">
+        <span class="identity-mark">MF</span>
+        <span>Marcus Fossum</span>
+      </a>
+
+      <nav aria-label="Hovedmeny">
+        <a href="#studie">Studie</a>
+        <a href="#frivillig">Frivillig arbeid</a>
+        <a href="#arbeid">Arbeidserfaring</a>
+        <a href="#prosjekter">Prosjekter</a>
+        <a href="#kontakt">Kontakt meg</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="language-toggle" type="button" data-language-toggle aria-label="Switch to English">
+          <span data-language-option="no">NO</span>
+          <span aria-hidden="true">/</span>
+          <span data-language-option="en">EN</span>
+        </button>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Bytt mellom lys og mørk modus" aria-pressed="false">
+          <span aria-hidden="true">◐</span>
+          <span data-theme-label>Mørk</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="intro" id="top">
+        <div class="intro-main">
+          <h1>Marcus<br />Fossum</h1>
+          <p class="intro-text">
+            Andreårsstudent på Ingeniørvitenskap og IKT ved NTNU. Ved siden av studiene er jeg nestleder i Teknologiporten og leder i Linjesamarbeidet.
+          </p>
+          <div class="intro-links">
+            <a class="primary-link" href="#studie">Se bakgrunnen min <span aria-hidden="true">↓</span></a>
+            <a class="cv-link" href="./marcus-fossum-cv.pdf" download>Last ned CV <span aria-hidden="true">↓</span></a>
+            <a class="github-link" href="https://github.com/marcusfossum" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <figure class="intro-portrait" aria-label="Portrett av Marcus Fossum">
+          <img src="./marcus-fossum.jpg" alt="Portrett av Marcus Fossum i Teknologiporten-genser" width="1365" height="2048" />
+        </figure>
+      </section>
+
+      <section class="cv-section" id="studie">
+        <header class="section-header">
+          <p>01</p>
+          <h2>Studie</h2>
+        </header>
+
+        <div class="education-list">
+          <article class="education">
+            <div class="entry-date">2025–2030</div>
+            <div>
+              <h3>NTNU</h3>
+              <p>Ingeniørvitenskap og IKT, integrert femårig masterprogram</p>
+            </div>
+          </article>
+          <article class="education">
+            <div class="entry-date">2021–2024</div>
+            <div>
+              <h3>Nadderud videregående skole</h3>
+              <p>Studiespesialisering med realfag, inkludert IT1 og IT2</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="study-tracker">
+          <div class="tracker-heading">
+            <div>
+              <p class="tracker-label">Studieprogresjon</p>
+              <h3>Emner</h3>
+            </div>
+            <div class="year-tabs" role="tablist" aria-label="Velg studieår">
+              <button type="button" role="tab" id="tab-year-1" aria-selected="false" aria-controls="year-1" data-year-tab="year-1" tabindex="-1">1. år</button>
+              <button type="button" role="tab" id="tab-year-2" aria-selected="true" aria-controls="year-2" data-year-tab="year-2">2. år</button>
+            </div>
+          </div>
+
+          <div class="year-panel" id="year-1" role="tabpanel" aria-labelledby="tab-year-1" data-year-panel hidden>
+            <div class="semester-grid semester-grid-two">
+              <article class="semester">
+                <h4>Høst 2025</h4>
+                <ul>
+                  <li class="course" data-grade="4"><span class="course-code">TMA4412</span><span class="course-name">Matematikk 2C: Diskret matematikk</span><span class="grade">B</span></li>
+                  <li class="course" data-grade="2"><span class="course-code">TMA4400</span><span class="course-name">Matematikk 1: Kalkulus og lineær algebra</span><span class="grade">D</span></li>
+                  <li class="course" data-grade="4"><span class="course-code">TDT4109</span><span class="course-name">Informasjonsteknologi, grunnkurs</span><span class="grade">B</span></li>
+                  <li class="course"><span class="course-code">TBM4130</span><span class="course-name">Ingeniørvitenskap og IKT, introduksjon</span><span class="grade grade-pass">Bestått</span></li>
+                </ul>
+              </article>
+
+              <article class="semester">
+                <h4>Vår 2026 · 5 fag</h4>
+                <ul>
+                  <li class="course" data-grade="4"><span class="course-code">TMA4411</span><span class="course-name">Matematikk 2B: Lineær algebra, differensialligninger og flervariabel analyse</span><span class="grade">B</span></li>
+                  <li class="course" data-grade="3"><span class="course-code">TMA4245</span><span class="course-name">Statistikk</span><span class="grade">C</span></li>
+                  <li class="course" data-grade="1"><span class="course-code">TKT4116</span><span class="course-name">Mekanikk 1</span><span class="grade">E</span></li>
+                  <li class="course" data-grade="2"><span class="course-code">TDT4100</span><span class="course-name">Objektorientert programmering</span><span class="grade">D</span></li>
+                  <li class="course" data-grade="4"><span class="course-code">EXPH0300</span><span class="course-name">Examen philosophicum for naturvitenskap og teknologi</span><span class="grade">B</span></li>
+                </ul>
+                <p class="semester-note">Exphil ligger normalt høsten 2026 i fagplanen, men ble tatt våren 2026.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="year-panel active" id="year-2" role="tabpanel" aria-labelledby="tab-year-2" data-year-panel>
+            <div class="semester-grid semester-grid-one">
+              <article class="semester">
+                <h4>Høst 2026</h4>
+                <ul>
+                  <li class="course"><span class="course-code">TMA4421</span><span class="course-name">Matematikk 3B: Vektoranalyse og funksjonsapproksimasjon</span><span class="grade grade-current">Pågår</span></li>
+                  <li class="course"><span class="course-code">TKT4122</span><span class="course-name">Mekanikk 2</span><span class="grade grade-current">Pågår</span></li>
+                  <li class="course"><span class="course-code">TDT4120</span><span class="course-name">Algoritmer og datastrukturer</span><span class="grade grade-current">Pågår</span></li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cv-section" id="frivillig">
+        <header class="section-header">
+          <p>02</p>
+          <h2>Frivillig arbeid</h2>
+        </header>
+
+        <div class="entry-list">
+          <article class="entry">
+            <div class="entry-date">2025–nå</div>
+            <div class="entry-title">
+              <h3>Teknologiporten</h3>
+              <p>Nestleder · vår 2026–nå</p>
+              <p>Prosjektmedarbeider · høst 2025–vår 2026</p>
+            </div>
+            <div class="entry-description">
+              <p class="organisation-intro">Teknologiporten er NTNUs største multidisiplinære bedriftskontakt og knytter studenter og næringsliv sammen.</p>
+              <ul>
+                <li>Nestleder med ansvar for koordinering, oppfølging og daglig drift sammen med leder.</li>
+                <li>Planlegger og gjennomfører karrieredager, bedriftspresentasjoner og andre arrangementer mellom studenter og næringsliv.</li>
+                <li>Hovedansvar for organisasjonens opptak og ansvarlig for Teknologiportens aktiviteter under fadderuken, blant annet en presentasjon for 450 studenter, stands, en egen Teknologiporten-dag og andre arrangementer. Dette bidro til rekordmange søkere til organisasjonen.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="entry">
+            <div class="entry-date">2026–nå</div>
+            <div class="entry-title">
+              <h3>Linjesamarbeidet</h3>
+              <p>Leder · vår 2026–nå</p>
+            </div>
+            <div class="entry-description">
+              <p class="organisation-intro">Linjesamarbeidet samler bedriftskontaktene i linjeforeningene ved NTNU Gløshaugen for å samarbeide om felles saker og styrke kontakten med næringslivet.</p>
+              <ul>
+                <li>Tillitsvalgt, leder og kontaktperson.</li>
+                <li>Planlegger og leder møter, følger opp representantene og koordinerer saker.</li>
+                <li>Representerer Linjesamarbeidet i dialog med eksterne aktører og andre studentorganisasjoner.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="entry">
+            <div class="entry-date">2026–nå</div>
+            <div class="entry-title">
+              <h3>Hybrida</h3>
+              <p>Linjeforeningen for Ingeniørvitenskap og IKT</p>
+              <p>PROKOM</p>
+            </div>
+            <div class="entry-description">
+              <p>Medlem av promoteringskomiteen, som profilerer linjeforeningen og aktivitetene dens.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="cv-section" id="arbeid">
+        <header class="section-header">
+          <p>03</p>
+          <h2>Arbeidserfaring</h2>
+        </header>
+
+        <div class="entry-list">
+          <article class="entry">
+            <div class="entry-date">2024–2025</div>
+            <div class="entry-title"><h3>Eiksmarka skole</h3><p>Vikar og assistent</p></div>
+            <div class="entry-description"><p>Jobbet som vikarlærer og på SFO, med oppfølging av enkeltelever.</p></div>
+          </article>
+          <article class="entry">
+            <div class="entry-date">2021–2024</div>
+            <div class="entry-title"><h3>ØHIL</h3><p>Langrennstrener</p></div>
+            <div class="entry-description">
+              <p>Hovedtrener og trener ved sommerskiskole.</p>
+              <p class="description-followup">Gjennomførte også smørekurs for barn og voksne.</p>
+            </div>
+          </article>
+          <article class="entry">
+            <div class="entry-date">Sommer 2022</div>
+            <div class="entry-title"><h3>Olseng Marina AS</h3><p>Sommerjobb</p></div>
+            <div class="entry-description"><p>Salg av drivstoff, is og kioskvarer.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="cv-section" id="prosjekter">
+        <header class="section-header">
+          <p>04</p>
+          <h2>Prosjekter</h2>
+        </header>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="project-meta">IT1 og IT2 · Videregående</p>
+            <h3>Nettsider og spill</h3>
+            <p class="project-description">Enkle nettsider og mindre spillprosjekter laget for å lære programmering, webutvikling og objektorientering.</p>
+            <ul class="project-tags" aria-label="Teknologier og prosjekttype">
+              <li>Python</li>
+              <li>Pygame</li>
+              <li>Objektorientering</li>
+              <li>Gruppeprosjekt</li>
+            </ul>
+            <video class="project-video" controls playsinline preload="metadata" poster="./diddy-jump-poster.jpg" aria-label="Kort demonstrasjon av spillet Diddy Jump">
+              <source src="./diddy-jump-demo.mp4" type="video/mp4" />
+              Nettleseren din støtter ikke videoavspilling.
+            </video>
+          </article>
+          <article class="project-card">
+            <p class="project-meta">IT2 · Videregående</p>
+            <h3>Forenklet aksjeanalyse</h3>
+            <p class="project-description">Et gruppeprosjekt som hentet markedsdata gjennom et API og brukte enkel regresjon og glidende gjennomsnitt til å undersøke kursutvikling.</p>
+            <ul class="project-tags" aria-label="Teknologier og prosjekttype">
+              <li>Python</li>
+              <li>API</li>
+              <li>Markedsdata</li>
+              <li>Lineær regresjon</li>
+              <li>Gruppeprosjekt</li>
+            </ul>
+            <video class="project-video" controls playsinline preload="metadata" poster="./aksjeanalyse-poster.jpg" aria-label="Kort demonstrasjon av aksjeanalyseprogrammet">
+              <source src="./aksjeanalyse-demo.mp4" type="video/mp4" />
+              Nettleseren din støtter ikke videoavspilling.
+            </video>
+          </article>
+        </div>
+        <a class="section-link" href="https://github.com/marcusfossum" target="_blank" rel="noreferrer">Se eldre prosjekter på GitHub <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <section class="contact-section" id="kontakt">
+        <div class="contact-portrait">
+          <div class="contact-portrait-frame">
+            <img src="./marcus-fossum.jpg" alt="Nærbilde av Marcus Fossum" width="1365" height="2048" />
+          </div>
+          <span>05</span>
+        </div>
+        <div>
+          <h2>Ta kontakt</h2>
+          <p class="contact-intro">Du når meg på e-post eller LinkedIn.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:marcus.m.fossum@gmail.com"><span>E-post</span>marcus.m.fossum@gmail.com</a>
+          <a href="https://www.linkedin.com/in/marcus-fossum-72bb29386/" target="_blank" rel="noreferrer"><span>LinkedIn</span>Marcus Fossum</a>
+          <a href="https://github.com/marcusfossum" target="_blank" rel="noreferrer"><span>GitHub</span>github.com/marcusfossum</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Marcus Fossum · Trondheim</p>
+      <button type="button" data-top>Til toppen <span aria-hidden="true">↑</span></button>
+    </footer>
+  </body>
+</html>
